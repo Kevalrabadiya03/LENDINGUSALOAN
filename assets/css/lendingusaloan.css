@@ -1,0 +1,105 @@
+.navbar-nav .nav-link {
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-nav .nav-link:hover{
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.marquee {
+  display: none;
+}
+
+.carousel-caption {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  color: white;
+}
+.carousel-caption h5 {
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: roboto;
+}
+.carousel-caption p {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: roboto;
+}
+.main-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.about-loan {
+  padding: 30px 0px;
+}
+.loan-about {
+  padding: 0px 0px 30px 0px;
+}
+.about-loan-titel {
+  margin: 20px;
+  font-family: poppins;
+  font-size: 20px;
+}
+.about-col-titel h3 {
+  font-size: 22px;
+  font-family: poppins;
+}
+.about-col-titel p,
+.get-in-touch-titel p {
+  font-size: 18px;
+  font-family: poppins;
+  margin-top: 10px;
+}
+.get-in-touch-map {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+}
+.get-in-touch-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.main-form {
+  padding: 30px 0px;
+}
+@media screen and (max-width: 991px) {
+  .marquee {
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    background-color: rgb(138, 138, 240);
+    width: 100%;
+    display: block;
+  }
+  .carousel-caption h5 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: roboto;
+  }
+}
