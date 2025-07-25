@@ -29,7 +29,8 @@
 
 .carousel-caption {
   position: relative;
-  top: 50%;
+  top: 70%;
+  align-items: center;
   text-align: center;
   color: white;
 }
@@ -86,14 +87,15 @@
 @media screen and (max-width: 991px) {
   .marquee {
     font-size: 30px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     text-align: center;
     margin: 0px;
     padding: 0px 0px 0px 0px;
-    background-color: rgb(138, 138, 240);
+    background-color:#0d6dfde5;
     width: 100%;
     display: block;
+    text-transform: capitalize;
   }
   .carousel-caption h5 {
     font-size: 30px;
@@ -103,3 +105,50 @@
     font-family: roboto;
   }
 }
+.why-choose-us-col-2{
+  padding: 0px 0px !important;
+}
+@media screen and (max-width:991px) {
+  .why-choose-us-col-2{
+    padding:0px 50px !important;
+  }
+}
+.link ul li a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.link ul li a:hover{
+  color: rgb(40, 64, 172);
+  text-decoration: none;
+}
+.link ul li{
+  padding: 10px 0px;
+}
+ .address::before {
+    content: "\f3c5"; /* Map Marker Alt icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    color: #333;
+  }
+
+  .phone::before {
+    content: "\f095"; /* Phone icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    color: #333;
+  }
+
+  .email::before {
+    content: "\f0e0"; /* Envelope icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    color: #333;
+  }
+  .contact-data p{
+    padding: 10px 0px;
+    margin: 0px 0px;
+  }
+
