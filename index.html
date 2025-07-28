@@ -114,8 +114,8 @@
     <div class="container-fluid mt-5">
       <h2 class="text-center fw-bold text-uppercase">Why Choose us</h2>
       <div class="row">
-        <div class="col-lg-6">
-          <div class="why-choose-us-img p-5">
+        <div class="col-lg-6 pt-4">
+          <div class="why-choose-us-img  p-lg-5">
             <img src="assets/img/why-choose-us.jpg" class="img-fluid" alt="">
           </div>
         </div>
@@ -157,14 +157,11 @@
       <div class="container">
         <div class="get-in-touch-titel text-center">
           <h2>GET IN TO TOUCH</h2>
-          <P>500 Terry Francois Street, 6th Floor. San Francisco, CA 94158</P>
-          <p>Tel : (888) 408-5630</p>
+          <P>Los Angeles CALIFORNIA</P>
+          <p>Tel : +18886787161</p>
         </div>
         <div class="get-in-touch-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.84034814581!2d-122.38967722524754!3d37.77034151241716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe5e0af3%3A0x11c548b59491f791!2s500%20Terry%20A%20Francois%20Blvd%206th%20floor%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2sin!4v1751202943320!5m2!1sen!2sin"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0444598982!2d-118.741396849958!3d34.020608397021306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1753726460836!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
@@ -188,18 +185,18 @@
             </div>
             <div class="form-loan fade-in fade-in-right delay-2">
               <form id="loanForm" class="row g-3 needs-validation" novalidate>
-                <div class="col-md-6">
-                  <label for="validationCustom01" class="form-label">First name</label>
-                  <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                <div class="col-md-12">
+                  <label for="validationCustom01" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Full Name" required>
                   <div class="valid-feedback">Looks good!</div>
                 </div>
-                <div class="col-md-6">
+                <!--<div class="col-md-6">
                   <label for="validationCustom02" class="form-label">Last name</label>
                   <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
                   <div class="valid-feedback">Looks good!</div>
-                </div>
+                </div>-->
                 <div class="col-md-12">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <label for="exampleInputEmail1" class="form-label">Email Address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
                 </div>
                 <div class="mb-12">
@@ -217,7 +214,7 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-dark w-100" type="submit">Submit form</button>
+                  <button class="btn btn-dark w-100" type="submit">On Click Form</button>
                 </div>
               </form>
             </div>
@@ -232,13 +229,12 @@
 
         // Collect form values
         const firstName = document.getElementById("validationCustom01").value;
-        const lastName = document.getElementById("validationCustom02").value;
         const email = document.getElementById("exampleInputEmail1").value;
         const message = document.getElementById("exampleFormControlTextarea1").value;
 
         // Combine data into a single email body
         const emailBody = `
-      Name: ${firstName} ${lastName}
+      Name: ${firstName}
       Email: ${email}
       Message: ${message}
     `;
@@ -250,14 +246,14 @@
             "Content-Type": "application/json"
           },
           body: JSON.stringify({
-            to: "kevalrabadiya77@gmail.com",   // your receiving email
+            to: "ezprobiz@gmail.com",   // your receiving email
             subject: "New Loan Application Submitted",
             text: emailBody
           })
         })
           .then(response => response.text())
           .then(result => {
-            alert("Thank you! Your form was submitted.");
+            alert("IN order to setup to Your monthly installment for Entire Duration");
             console.log(result);
             document.getElementById("loanForm").reset();
           })
@@ -297,9 +293,9 @@
         <h5 style="border-bottom: 2px solid black; width: fit-content;">Address </h5>
       </div>
       <div class="contact-data mt-4">
-        <p class="address">123 Main St, NY</p>
-        <p class="phone">+1 234 567 890</p>
-        <p class="email">info@example.com</p>
+        <p class="address">Los Angeles CALIFORNIA</p>
+        <p class="phone">+18886787161</p>
+        <p class="email">ezprobiz@gmail.com</p>
 
       </div>
     </div>
